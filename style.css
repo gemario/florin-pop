@@ -33,13 +33,13 @@ body {
 
   display: grid;
   place-items: center;
-  height: 100vh;
+  padding: 4rem;
 }
 
 form {
   background-color: var(--white);
   
-  width: min(73rem, 87%);
+  width: min(57rem, 87%);
   margin: auto;
   
   padding: 6rem;
@@ -187,4 +187,56 @@ small {
   display: block;
   margin-top: 1rem;
   font-size: 1.4rem;
+}
+
+
+@media (max-width: 585px) {
+  body {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  form {
+    padding: 4rem;
+  }
+
+  fieldset legend {
+    font-size: 2.5rem;   
+  }
+
+  .radio-wrapper label {
+   font-size: 1.6rem;
+  }
+
+  button {
+   font-size: 1.4rem;
+  }
+
+  small {
+   font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  fieldset legend {
+    font-size: 2rem;   
+  }
+
+  .radio-wrapper input[type="radio"] {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .checkbox-wrapper input[type="checkbox"] {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .checkbox-wrapper input[type="checkbox"]:checked::before {
+    font-size: 2rem;
+  }
 }
