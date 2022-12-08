@@ -220,6 +220,11 @@ small {
 @media (max-width: 420px) {
   body {
     font-size: 1.2rem;
+    padding-inline: 1rem;
+  }
+
+  form {
+    padding: 2.2rem;
   }
 
   fieldset legend {
